@@ -1,0 +1,15 @@
+framework=verl
+algo=ppo
+model=Qwen/Qwen2.5-0.5B-Instruct
+train_batch_size=256
+max_prompt_length=512
+max_response_length=256
+actor_lr=1e-6
+critic_lr=1e-5
+ppo_mini_batch_size=64
+ppo_micro_batch_size_per_gpu=2
+rollout_gpu_memory_utilization=0.35
+trainer_n_gpus_per_node=2
+trainer_total_epochs=15
+trainer_save_freq=10
+trainer_test_freq=10
